@@ -7,3 +7,20 @@
 body {
   background: #343a40;
 }
+
+.menuu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.herosection {
+  height: 150px;
+}
