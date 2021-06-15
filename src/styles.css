@@ -24,3 +24,7 @@ body {
 .herosection {
   height: 150px;
 }
+
+.signoutbutton {
+  cursor: pointer;
+}
