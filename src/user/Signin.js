@@ -16,7 +16,6 @@ const Signin = () => {
     didRedirect: false,
   });
   const { email, password, error, loading, didRedirect } = values;
-
   const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
