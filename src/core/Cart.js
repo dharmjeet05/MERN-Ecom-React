@@ -21,17 +21,21 @@ const Cart = () => {
   const loadAllProducts = () => {
     return (
       <div>
-        <h2>This section to load products</h2>
-        {products.map((pro, index) => (
-          <Card
-            key={index}
-            product={pro}
-            addToCart={false}
-            removeFromCart={true}
-            setReload={setReload}
-            reload={reload}
-          />
-        ))}
+        <h2>Your Selected Products</h2>
+        <div className="row">
+          {products.map((pro, index) => (
+            <div key={index} className="col-6 mb-4">
+              <Card
+                key={index}
+                product={pro}
+                addToCart={false}
+                removeFromCart={true}
+                setReload={setReload}
+                reload={reload}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   };
