@@ -10,16 +10,16 @@ const Base = ({
   children,
 }) => {
   return (
-    <div>
+    <div className="main-div">
       <Menu />
-      <div className="container-fluid">
+      <div className="container-fluid main-in-base-template">
         <div className="jumbotron bg-dark text-white text-center herosection">
           <h2 className="display-4">{title}</h2>
           <p className="lead">{description}</p>
         </div>
         <div className={className}>{children}</div>
       </div>
-      <footer className="footer bg-dark mt-auto py-1">
+      <footer className="footer bg-dark py-1">
         <div className="container-fluid bg-success text-white text-center py-2">
           <h6>If you got any questions, feel free to reach out!</h6>
           <button className="btn btn-warning btn-sm rounded">Contact Us</button>

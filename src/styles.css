@@ -14,8 +14,16 @@ body {
   justify-content: center;
 }
 
+.main-div {
+  position: relative;
+}
+
+.main-in-base-template {
+  padding-bottom: 90px;
+}
+
 .footer {
-  position: sticky;
+  position: absolute;
   bottom: 0px;
   right: 0px;
   left: 0px;
