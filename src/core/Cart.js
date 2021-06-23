@@ -9,6 +9,7 @@ import Card from "./Card";
 
 // Helper
 import { loadCart } from "./helper/cartHelper";
+import StripeCheckout from "../payment/helper/StripeCheckout";
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
@@ -40,19 +41,13 @@ const Cart = () => {
     );
   };
 
-  const loadCheckout = () => {
-    return (
-      <div>
-        <h2>This section is for Checkout</h2>
-      </div>
-    );
-  };
-
   return (
     <Base title="Cart Page" description="Ready to Checkout">
       <div className="row text-center">
         <div className="col-6">{loadAllProducts()}</div>
-        <div className="col-6">{loadCheckout()}</div>
+        <div className="col-6">
+          <StripeCheckout products={products} setReload={setReload} />
+        </div>
       </div>
     </Base>
   );
